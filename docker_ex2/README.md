@@ -15,9 +15,9 @@ We want to run this backend container using Docker. You will need to add the fol
 
 This will be very similar to the one for the backend. The key changes are
 
-1. Since this isn't Python, our base image will be `node:14`
-2. `pip` is for Python and we will be using `yarn` here so change the `pip install ...` command to `yarn install`
-3. Your final command to run the application should be `CMD ["yarn", "start"]` as the frontend runs when we use `yarn start`
+1. Since this isn't Python, our base image will be `node:16-slim`
+2. `pip` is for Python and we will be using `npm` here so change the `pip install ...` command to `npm install`
+3. Your final command to run the application should be `CMD ["npm", "start"]` as the frontend runs when we use `npm start`
 
 ### Docker Compose
 
